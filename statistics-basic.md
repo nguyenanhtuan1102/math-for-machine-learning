@@ -46,6 +46,15 @@
 - Nhược điểm
   - Dễ bị ảnh hưởng bởi ngoại lệ
   - Trong trường hợp phân phối dữ liệu không đối xứng hoặc có skewness, trung bình có thể không phản ánh đúng trung tâm của dữ liệu
+ 
+``` bash
+# pandas
+state['Population'].mean()
+
+# numpy
+np.mean(a)
+```
+
 ### Median
 - Ưu điểm
   - Là giá trị nằm chính giữa của dữ liệu
@@ -53,6 +62,15 @@
   - Phản ánh tốt hơn trong trường hợp phân phối không chuẩn
 - Nhược điểm
   - Trung vị không cho biết gì về cách các giá trị phân phối trong dữ liệu.
+ 
+``` bash
+# pandas
+state['Population'].median()
+
+# numpy
+np.median(a)
+```
+
 ### Mode
 - Ưu điểm
   - Là giá trị phổ biến nhất
@@ -60,6 +78,11 @@
 - Nhược điểm
   - Một tập dữ liệu có thể có nhiều mode
   - Không thích hợp cho dữ liệu liên tục như dữ liệu thời gian hoặc dữ liệu đo lường
+
+``` bash
+# pandas
+state['Population'].mode()
+```
 
 ## 5. Measure Of Asymmetry
 - Skewness
